@@ -1,317 +1,381 @@
-# Deepfake Detection System with Blockchain Integration
+# 🔐 Real-Time Deepfake Detection Using Deep Learning for Secure & Trustworthy Digital Media
 
-[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![Blockchain](https://img.shields.io/badge/blockchain-Polygon_Mumbai-blue)](https://polygon.technology/)
-[![Database](https://img.shields.io/badge/database-MongoDB_Atlas-green)](https://www.mongodb.com/cloud/atlas)
+<div align="center">
 
-A comprehensive facial recognition system with blockchain-based immutable audit logs and file integrity verification.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:667eea,100:764ba2&height=200&section=header&text=Deepfake%20Detection&fontSize=45&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=AI%20%7C%20Blockchain%20%7C%20Computer%20Vision&descAlignY=58&descSize=18" width="100%"/>
 
----
+### ⚡ Team **Sparky Coders** ⚡
 
-## **Table of Contents**
+**Building a secure and trustworthy digital world with AI + Blockchain**
 
-1. [Project Overview](#project-overview)  
-2. [Features](#features)  
-3. [Architecture](#architecture)  
-4. [Folder Structure](#folder-structure)  
-5. [Quick Start](#quick-start)  
-6. [Installation](#installation)  
-7. [Deployment](#deployment)  
-8. [Technologies Used](#technologies-used)  
-9. [API Documentation](#api-documentation)  
-10. [Future Enhancements](#future-enhancements)  
-11. [License](#license)  
+<p>
+<img src="https://img.shields.io/badge/Team-Sparky%20Coders-purple?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/AI-Deepfake%20Detection-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Blockchain-Polygon-purple?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Database-MongoDB-green?style=for-the-badge"/>
+</p>
+
+</div>
 
 ---
 
-## **Project Overview**
+## 👨‍💻 Team — Sparky Coders
 
-This project is a **Deepfake/Facial Recognition secured file system** with blockchain integration that:  
+<div align="center">
 
-- Detects faces in real-time using webcam input  
-- Records all access attempts on blockchain for immutable audit logs  
-- Provides file integrity verification against blockchain records  
-- Detects file tampering with automatic blockchain alerts  
-- Supports MongoDB for user authentication and data storage  
+| Role           | Team Member             |
+| -------------- | ----------------------- |
+| 👑 Team Leader | **Jestin M K**          |
+| 💻 Developer   | **GIRI T**              |
+| 💻 Developer   | **Tharunya Vaisnavi P** |
 
-The system is split into:  
-
-- **Frontend:** Static HTML/CSS/JS with real-time webcam capture  
-- **Backend:** Flask API with face recognition and blockchain integration  
-- **Blockchain:** Smart contract on Polygon testnet for access logging  
-- **Database:** MongoDB Atlas for user data and local backup  
+</div>
 
 ---
 
-## **Features**
+## 🎥 Project Demo
 
-### Core Features
-- Real-time face recognition using OpenCV & face_recognition  
-- **Blockchain Integration**: Immutable access records on Polygon testnet  
-- **File Integrity Verification**: SHA-256 hashing with blockchain verification  
-- **Tampering Detection**: Automatic file monitoring with blockchain alerts  
-- Smart contract for access record management  
+<div align="center">
 
-### Security Features
-- **Immutable Audit Logs**: All access attempts recorded on blockchain  
-- **File Hash Verification**: Detect unauthorized file modifications  
-- **User Authentication Ready**: MongoDB integration for user management  
-- **Environment-based Configuration**: Secure credential management  
+### ▶️ Watch Our Project in Action
 
-### Deployment Features
-- **Free Cloud Hosting**: Netlify (frontend) + Render (backend)  
-- **Free Database**: MongoDB Atlas (512MB tier)  
-- **Free Blockchain**: Polygon Mumbai testnet  
-- **Container-ready**: Procfile and runtime configuration included  
+[![Deepfake Detection Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+
+**🎬 [Watch Demo on YouTube](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)**
+
+</div>
+
+> Replace `[YOUR_VIDEO_ID]([https://youtu.be/8wVQ7h2xeZ8]` with the ID from your YouTube video.
 
 ---
 
-## **Architecture**
+## 🧠 About the Project
 
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=667EEA&center=true&vCenter=true&width=700&lines=Real-Time+Deepfake+Detection;AI-Powered+Facial+Recognition;Blockchain+Based+Audit+Logs;Secure+File+Integrity+Verification;Trustworthy+Digital+Media" />
+
+</div>
+
+This project is a **real-time AI-powered security system** that combines:
+
+**Deep Learning + Facial Recognition + Blockchain + File Integrity Monitoring + MongoDB**
+
+The system is designed to detect potentially manipulated facial input, authenticate authorized users, protect sensitive files, and maintain immutable security records.
+
+---
+
+## 🚨 Problem Statement
+
+The rapid development of generative AI has made it increasingly easy to create realistic **deepfake images and videos**.
+
+Traditional facial authentication systems may not be sufficient against sophisticated spoofing and manipulated media.
+
+At the same time, sensitive files can be modified without authorization, while centralized audit logs may be vulnerable to tampering.
+
+### Our Solution
+
+**Sparky Coders** proposes an integrated security platform that:
+
+```text
+        🎥 Live Camera
+             │
+             ▼
+      👤 Face Detection
+             │
+             ▼
+      🧠 Deepfake Analysis
+             │
+             ▼
+      🔐 User Verification
+             │
+             ▼
+       📁 Secure File
+          Access
+             │
+             ▼
+       🔎 SHA-256 Check
+             │
+             ▼
+      ⛓️ Blockchain Log
+             │
+             ▼
+       🛡️ Immutable
+        Audit Trail
 ```
-┌─────────────────┐
-│   React/Web UI  │
-│   (Netlify)     │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│ Flask / FastAPI │
-│   (Render)      │
-└────────┬────────┘
-         │
-    ┌────┼────┬──────────┐
-    ▼    ▼    ▼          ▼
-Face  Deepfake  MongoDB  Blockchain
-Recog  Detection Atlas   Service
-    │           │          │
-    ▼           ▼          ▼
-SHA-256 Hash  User Data  Smart Contract
-    │                      │
-    └──────────┬───────────┘
-               ▼
-       Polygon Mumbai Testnet
-               │
-               ▼
-       Immutable Audit Log
+
+---
+
+## ✨ Key Features
+
+### 🧠 AI Deepfake Detection
+
+* Real-time webcam analysis
+* Deep Learning-based detection
+* Facial feature analysis
+* CNN/LSTM model integration
+* Suspicious/manipulated media identification
+
+### 👤 Facial Recognition
+
+* OpenCV face detection
+* `face_recognition` library
+* Real-time authentication
+* Authorized-user verification
+
+### ⛓️ Blockchain Security
+
+* Immutable access records
+* Smart contract integration
+* Polygon testnet support
+* Tamper-resistant audit logs
+
+### 🔐 File Integrity
+
+* SHA-256 file hashing
+* File modification detection
+* Blockchain-based verification
+* Security event recording
+
+### 🗄️ MongoDB
+
+* User data management
+* Authentication support
+* Access information
+* MongoDB Atlas compatibility
+
+---
+
+## 🏗️ System Architecture
+
+```text
+                     ┌────────────────────┐
+                     │    🌐 Web Browser   │
+                     │  HTML / CSS / JS    │
+                     └─────────┬──────────┘
+                               │
+                               ▼
+                     ┌────────────────────┐
+                     │   ⚙️ Flask API     │
+                     │     Backend        │
+                     └─────────┬──────────┘
+                               │
+            ┌──────────────────┼──────────────────┐
+            │                  │                  │
+            ▼                  ▼                  ▼
+       ┌─────────┐       ┌───────────┐      ┌──────────┐
+       │ OpenCV  │       │ Deepfake  │      │ MongoDB  │
+       │  Face   │       │ Detection │      │  Atlas   │
+       │Detection│       │    AI     │      │          │
+       └────┬────┘       └─────┬─────┘      └──────────┘
+            │                  │
+            └──────────┬───────┘
+                       ▼
+                ┌───────────────┐
+                │ 🔐 SHA-256    │
+                │ File Hashing  │
+                └───────┬───────┘
+                        │
+                        ▼
+                ┌───────────────┐
+                │ ⛓️ Web3.py    │
+                │ Smart Contract│
+                └───────┬───────┘
+                        │
+                        ▼
+                ┌───────────────┐
+                │ 🟣 Polygon    │
+                │   Testnet     │
+                └───────┬───────┘
+                        │
+                        ▼
+                🛡️ IMMUTABLE AUDIT LOG
 ```
 
 ---
 
-## **Folder Structure**
+## 📂 Project Structure
+
+```text
 deepfake-main/
-│-- backend/               # Flask backend
-│   |-- app.py            # Main Flask application
-│   |-- blockchain_service.py  # Web3 integration
-│   |-- utils.py          # File hashing and encryption
-│   |-- file_monitor.py   # File integrity monitoring
-│   |-- contract_abi.py   # Smart contract ABI
-│   |-- requirements.txt  # Python dependencies
-│   |-- Procfile          # Render deployment config
-│   |-- runtime.txt       # Python version specification
-│   |-- .env              # Environment variables (not in git)
-│   └── .env.example      # Environment template
-│-- frontend/             # Frontend UI
-│   |-- index.html        # Main interface
-│   └── static/           # CSS, JS, images
-│-- contracts/            # Smart contracts
-│   └── AccessRecord.sol  # Solidity contract
-│-- DEPLOYMENT_GUIDE.md   # Complete deployment instructions
-│-- MONGODB_SETUP.md      # Database setup guide
-│-- BLOCKCHAIN_SETUP.md   # Blockchain setup guide
-│-- BLOCKCHAIN_TESTNET_SETUP.md  # Testnet configuration
-│-- QUICK_START.md        # Fast deployment guide
-│-- deploy.sh / deploy.bat # Deployment scripts
-│-- README.md             # This file
-│-- .gitignore            # Git ignore rules
-
-
----
-
-## **Quick Start**
-
-Get the system running online in 15 minutes! See [QUICK_START.md](QUICK_START.md) for detailed instructions.
-
-### Prerequisites
-- GitHub account
-- Basic web browser
-- 15 minutes
-
-### Fast Track
-1. **Windows**: Run `deploy.bat`
-2. **Mac/Linux**: Run `./deploy.sh`
-3. Follow the prompts to set up free services
-4. Deploy to Render (backend) and Netlify (frontend)
-
----
-
-## **Installation (Local Setup)**
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/jestinkm/deepfake.git
-cd deepfake-main
+│
+├── 🧠 backend/
+│   ├── app.py
+│   ├── blockchain_service.py
+│   ├── utils.py
+│   ├── file_monitor.py
+│   ├── contract_abi.py
+│   ├── requirements.txt
+│   ├── Procfile
+│   ├── runtime.txt
+│   └── .env.example
+│
+├── 🌐 frontend/
+│   ├── index.html
+│   └── static/
+│
+├── ⛓️ contracts/
+│   └── AccessRecord.sol
+│
+├── 📄 DEPLOYMENT_GUIDE.md
+├── 📄 MONGODB_SETUP.md
+├── 📄 BLOCKCHAIN_SETUP.md
+├── 📄 QUICK_START.md
+├── 📄 README.md
+└── 📄 .gitignore
 ```
 
-### 2. Create a virtual environment
-```bash
-python -m venv venv
-source venv/bin/activate   # macOS/Linux
-venv\Scripts\activate      # Windows
+---
+
+## 🛠️ Technology Stack
+
+<div align="center">
+
+| Category            | Technologies                   |
+| ------------------- | ------------------------------ |
+| 🧠 AI/ML            | Deep Learning, CNN, LSTM       |
+| 👁️ Computer Vision | OpenCV, face_recognition, dlib |
+| 💻 Backend          | Python, Flask, Flask-CORS      |
+| 🌐 Frontend         | HTML5, CSS3, JavaScript        |
+| ⛓️ Blockchain       | Solidity, Web3.py, Polygon     |
+| 🗄️ Database        | MongoDB, MongoDB Atlas         |
+| 🔐 Security         | SHA-256, AES                   |
+| ☁️ Deployment       | Render, Netlify                |
+| 📦 Version Control  | Git, GitHub                    |
+
+</div>
+
+---
+
+## ⚡ How It Works
+
+```text
+┌─────────────────────────────┐
+│       Start Webcam 📷       │
+└──────────────┬──────────────┘
+               ↓
+┌─────────────────────────────┐
+│       Detect Face 👤        │
+└──────────────┬──────────────┘
+               ↓
+┌─────────────────────────────┐
+│   Analyze Deepfake 🧠       │
+└──────────────┬──────────────┘
+               ↓
+        ┌──────┴──────┐
+        │             │
+     Genuine       Suspicious
+        │             │
+        ↓             ↓
+   Authenticate    🚨 Alert
+        │
+        ↓
+   File Access 🔐
+        │
+        ↓
+ SHA-256 Verification
+        │
+        ↓
+ Blockchain Logging ⛓️
+        │
+        ↓
+ Immutable Audit Trail 🛡️
 ```
 
-### 3. Install dependencies
-```bash
-cd backend
-pip install -r requirements.txt
-```
+---
 
-### 4. Configure environment variables
-```bash
-cp .env.example .env
-# Edit .env with your configuration
-```
+## 📊 Security Layers
 
-### 5. Add known face image
-Place your reference face image as `just.jpg` in the backend directory.
+<div align="center">
 
-### 6. Run the Flask server
-```bash
-cd backend
-python app.py
-```
+**Layer 1** → 👤 Facial Detection
 
-### 7. Test the application
-Open your browser at: `http://127.0.0.1:5000/`
+⬇️
+
+**Layer 2** → 🧠 Deepfake Detection
+
+⬇️
+
+**Layer 3** → 🔐 Authentication
+
+⬇️
+
+**Layer 4** → 🔎 SHA-256 Integrity Verification
+
+⬇️
+
+**Layer 5** → ⛓️ Blockchain Audit Logging
+
+⬇️
+
+### 🛡️ Secure & Trustworthy Digital Media
+
+</div>
 
 ---
 
-## **Deployment**
+## 🚀 Future Enhancements
 
-### Free Cloud Deployment
-
-Complete deployment guide available in [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)
-
-#### Backend (Render)
-- **Platform**: Render
-- **Runtime**: Python 3
-- **Build**: `pip install -r requirements.txt`
-- **Start**: `gunicorn app:app --host 0.0.0.0 --port $PORT`
-
-#### Frontend (Netlify)
-- **Platform**: Netlify
-- **Publish directory**: `frontend`
-- **Build command**: (leave empty)
-
-#### Database (MongoDB Atlas)
-- **Platform**: MongoDB Atlas Free Tier
-- **Setup**: See [MONGODB_SETUP.md](MONGODB_SETUP.md)
-
-#### Blockchain (Polygon Mumbai)
-- **Platform**: Polygon Mumbai Testnet
-- **Setup**: See [BLOCKCHAIN_TESTNET_SETUP.md](BLOCKCHAIN_TESTNET_SETUP.md)
+* [ ] Advanced CNN-LSTM deepfake detection
+* [ ] Real-time liveness detection
+* [ ] Multi-face authentication
+* [ ] Role-based access control
+* [ ] Admin security dashboard
+* [ ] IPFS decentralized storage
+* [ ] Real-time email/SMS alerts
+* [ ] Mobile application
+* [ ] AI anomaly detection
+* [ ] Polygon mainnet deployment
+* [ ] Advanced anti-spoofing mechanisms
 
 ---
 
-## **Technologies Used**
+## 📺 Demo
 
-### Frontend
-- HTML5, CSS3, JavaScript
-- Real-time webcam capture
-- AJAX for API communication
+<div align="center">
 
-### Backend
-- Python 3.9+
-- Flask (Web Framework)
-- Flask-CORS (Cross-origin support)
-- Gunicorn (WSGI server)
+### ⚡ Sparky Coders — Real-Time Deepfake Detection
 
-### Face Recognition
-- OpenCV (Computer Vision)
-- face_recognition (Face detection)
-- dlib (Machine learning)
+**AI 🤖 + Blockchain ⛓️ + Security 🔐**
 
-### Blockchain
-- Web3.py (Ethereum/Polygon interaction)
-- Solidity (Smart contracts)
-- Polygon Mumbai Testnet
+[![YouTube](https://img.shields.io/badge/▶️_Watch_Demo-YouTube-red?style=for-the-badge\&logo=youtube)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
 
-### Security
-- SHA-256 (File hashing)
-- AES (File encryption)
-- python-dotenv (Secret management)
-
-### Database
-- MongoDB Atlas (Free tier)
-- PyMongo (MongoDB driver)
-
-### Deployment
-- Render (Backend hosting)
-- Netlify (Frontend hosting)
-- GitHub (Version control)
+</div>
 
 ---
 
-## **API Documentation**
+## 👥 Team Sparky Coders
 
-### Face Recognition
-- `POST /check_face` - Process face recognition frame
-- `GET /` - API status and endpoints
+<div align="center">
 
-### Blockchain Operations
-- `GET /api/blockchain/status` - Check blockchain connection
-- `GET /api/blockchain/user_history` - Get user access history
-- `POST /api/blockchain/verify_file` - Verify file integrity
-- `POST /api/blockchain/record_manual` - Manual access recording
+### ⚡ SPARKY CODERS ⚡
 
-### File Monitoring
-- `GET /api/file_monitor/status` - Check monitoring status
-- `POST /api/file_monitor/start` - Start file monitoring
-- `POST /api/file_monitor/stop` - Stop file monitoring
-- `POST /api/file_monitor/check` - Manual integrity check
-- `GET /api/file_monitor/files` - List monitored files
-- `POST /api/file_monitor/add` - Add file to monitoring
+> **"Detect. Verify. Protect. Trust."**
+
+| 👑 | Name                    | Responsibility                |
+| -- | ----------------------- | ----------------------------- |
+| 👑 | **Jestin M K**          | Team Leader / Full Stack / AI |
+| 💻 | **Divya dharshini B**              | Developer                     |
+| 💻 | **Navyasri G** | Developer                     |
+
+</div>
 
 ---
 
-## **Future Enhancements**
+## 📜 License
 
-- [ ] **User Authentication**: Complete MongoDB integration for user login
-- [ ] **Deepfake Detection**: CNN/LSTM models for deepfake detection
-- [ ] **File Encryption**: AES encryption for sensitive files
-- [ ] **IPFS Integration**: Decentralized file storage
-- [ ] **Multi-face Support**: Handle multiple users simultaneously
-- [ ] **Liveness Detection**: Anti-spoofing measures
-- [ ] **Admin Dashboard**: Web interface for system management
-- [ ] **Mobile App**: React Native mobile application
-- [ ] **Production Blockchain**: Polygon mainnet deployment
-- [ ] **Real-time Alerts**: Email/SMS notifications for security events
+This project is licensed under the **MIT License**.
 
 ---
 
-## **License**
+<div align="center">
 
-MIT License — see LICENSE
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:764ba2,100:667eea&height=120&section=footer&animation=fadeIn"/>
 
----
+### ⚡ Built with ❤️ by **Sparky Coders** ⚡
 
-## **Contributing**
+**AI • Blockchain • Security • Innovation**
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+⭐ Star this repository if you like the project!
 
----
-
-## **Support**
-
-For detailed setup and deployment instructions, see:
-- [QUICK_START.md](QUICK_START.md) - Fast deployment
-- [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) - Complete deployment
-- [MONGODB_SETUP.md](MONGODB_SETUP.md) - Database setup
-- [BLOCKCHAIN_SETUP.md](BLOCKCHAIN_SETUP.md) - Smart contract deployment
-- [BLOCKCHAIN_TESTNET_SETUP.md](BLOCKCHAIN_TESTNET_SETUP.md) - Testnet configuration
-
-
-
-#   R e a l - T i m e - D e e p f a k e - D e t e c t i o n - U s i n g - D e e p - L e a r n i n g - f o r - S e c u r e - a n d - T r u s t w o r t h y - D i g i t a l - M e d i a  
- #   R e a l - T i m e - D e e p f a k e - D e t e c t i o n - U s i n g - D e e p - L e a r n i n g - f o r - S e c u r e - a n d - T r u s t w o r t h y - D i g i t a l - M e d i a  
- 
+</div>
