@@ -26,8 +26,8 @@
 | Role           | Team Member             |
 | -------------- | ----------------------- |
 | 👑 Team Leader | **Jestin M K**          |
-| 💻 Developer   | **GIRI T**              |
-| 💻 Developer   | **Tharunya Vaisnavi P** |
+| 💻 Developer   | **Divya dharshini B**   |
+| 💻 Developer   | **Navyasri G**          |
 
 </div>
 
