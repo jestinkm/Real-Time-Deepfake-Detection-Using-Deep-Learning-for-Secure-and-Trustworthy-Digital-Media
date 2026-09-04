@@ -39,15 +39,16 @@
 
 ### ▶️ Watch Our Project in Action
 
-[![Deepfake Detection Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![Deepfake Detection Demo](https://img.youtube.com/vi/8wVQ7h2xeZ8/0.jpg)](https://www.youtube.com/watch?v=8wVQ7h2xeZ8)
 
-**🎬 [Watch Demo on YouTube](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)**
+**🎬 [Watch Demo on YouTube](https://www.youtube.com/watch?v=8wVQ7h2xeZ8)**
 
 </div>
 
-> Replace `[YOUR_VIDEO_ID]([https://youtu.be/8wVQ7h2xeZ8]` with the ID from your YouTube video.
+> 🎬 Watch the complete demonstration of our **Deepfake Detection System**, developed by **Team Sparky Coders** for **GDG Hackathon 2026**.
 
 ---
+
 
 ## 🧠 About the Project
 
